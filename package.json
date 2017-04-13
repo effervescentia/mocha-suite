@@ -1,0 +1,56 @@
+{
+  "name": "mocha-suite",
+  "version": "0.0.0-development",
+  "description": "suite-level wrapper for mocha's describe",
+  "keywords": [
+    "mocha",
+    "test"
+  ],
+  "main": "dist/index.js",
+  "files": [
+    "dist/"
+  ],
+  "homepage": "https://github.com/effervescentia/mocha-suite#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/effervescentia/mocha-suite.git"
+  },
+  "author": {
+    "name": "Ben Teichman",
+    "email": "ben.l.teichman@gmail.com",
+    "url": "https://github.com/effervescentia"
+  },
+  "bugs": {
+    "url": "https://github.com/effervescentia/mocha-suite/issues"
+  },
+  "scripts": {
+    "start": "start-runner -p re-start/presets/typescript",
+    "prepush": "yarn start prepush",
+    "prepublish": "yarn start build",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "release": {
+    "verifyConditions": "condition-circle"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "license": "MIT",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@types/chai": "^3.5.0",
+    "@types/sinon": "^2.1.2",
+    "chai": "^3.5.0",
+    "sinon": "^2.1.0",
+    "start-simple-cli": "^4.1.1",
+    "tkstr-devtools": "^1.2.2",
+    "semantic-release": "^6.3.2"
+  },
+  "dependencies": {
+    "@types/mocha": "^2.2.40"
+  }
+}

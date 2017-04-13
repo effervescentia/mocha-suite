@@ -1,0 +1,9 @@
+{
+  "extends": "tslint:latest",
+  "rules": {
+    "no-angle-bracket-type-assertion": 0,
+    "no-namespace": 0,
+    "quotemark": [true, "single"],
+    "whitespace": [false, "check-typecast"]
+  }
+}
