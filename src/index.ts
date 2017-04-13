@@ -28,4 +28,4 @@ namespace Suite {
     (modifier ? _describe[modifier] : _describe)(description, suite);
 }
 
-export default Suite;
+export = Suite;
