@@ -13,7 +13,7 @@ jobs:
           name: Install
           command: yarn
       - save_cache:
-          key: projectname-{{ .Branch }}-{{ checksum "package.json" {% raw %}}}
+          key: projectname-{{ .Branch }}-{{ checksum "package.json"}}
           paths:
             - "~/node_modules"
       - run:
