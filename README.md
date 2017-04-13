@@ -1,4 +1,6 @@
 # mocha-suite
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/effervescentia/mocha-suite.svg)](https://greenkeeper.io/)
 Define suite-level utilities and test structure for mocha tests
 
 Save yourself the hassle of manually constucting suite definitions.
