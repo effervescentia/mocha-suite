@@ -1,0 +1,24 @@
+version: 2
+
+jobs:
+  build:
+    working_directory: ~/mocha-suite
+    docker:
+      - image: node-yarn
+    steps:
+      - checkout
+      - restore_cache:
+        key: projectname-{{ .Branch }}-{{ checksum "package.json" }}
+      - run:
+          name: Install
+          command: yarn
+      - save_cache:
+          key: projectname-{{ .Branch }}-{{ checksum "package.json" {% raw %}}}
+          paths:
+            - "~/node_modules"
+      - run:
+          name: Test
+          command: yarn start ci
+      - run:
+          name: Release
+          command: yarn start release
