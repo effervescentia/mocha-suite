@@ -4,7 +4,7 @@ jobs:
   build:
     working_directory: ~/mocha-suite
     docker:
-      - image: node-yarn
+      - image: kkarczmarczyk/node-yarn
     steps:
       - checkout
       - restore_cache:
