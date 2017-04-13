@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import * as sinon from 'sinon';
-import suite from '../src';
+import * as suite from '../src';
 
 describe('suite', () => {
   const DESCRIPTION = 'My Suite';
