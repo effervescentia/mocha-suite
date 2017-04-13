@@ -8,12 +8,12 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: projectname-{{ .Branch }}-{{ checksum "package.json" }}
+          key: mocha-suite-{{ .Branch }}-{{ checksum "package.json" "yarn.lock" }}
       - run:
           name: Install
           command: yarn
       - save_cache:
-          key: projectname-{{ .Branch }}-{{ checksum "package.json"}}
+          key: mocha-suite-{{ .Branch }}-{{ checksum "package.json" "yarn.lock" }}
           paths:
             - "~/node_modules"
       - run:
