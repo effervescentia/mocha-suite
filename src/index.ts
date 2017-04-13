@@ -12,7 +12,7 @@ function Suite<T>(suite: (tests: (utils: T) => void, opts?: any) => void, _descr
 
 namespace Suite {
   // tslint:disable-next-line max-line-length
-  export type Builder = (modifier?: Suite.Modifier) => <T>(description: string, optsOrTests: Suite.Tests | object | any[], tests?: Suite.Tests) => void;
+  export type Builder = (modifier?: Suite.Modifier) => <T>(description: string, optsOrTests: Suite.Tests | { [key: string]: any } | any[], tests?: Suite.Tests) => void;
   export type Tests = <T>(utils: T) => void;
   export type Modifier = 'only' | 'skip';
   export namespace Modifier {
