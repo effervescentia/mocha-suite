@@ -52,6 +52,6 @@
     "semantic-release": "^6.3.2"
   },
   "dependencies": {
-    "@types/mocha": "^2.2.40"
+    "@types/mocha": "^2.2.41"
   }
 }
