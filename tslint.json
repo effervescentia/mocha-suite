@@ -1,9 +1,10 @@
 {
   "extends": "tslint:latest",
   "rules": {
-    "no-angle-bracket-type-assertion": 0,
-    "no-namespace": 0,
+    "no-namespace": false,
     "quotemark": [true, "single"],
-    "whitespace": [false, "check-typecast"]
+    "whitespace": [false, "check-typecast"],
+    "interface-name": [true, "never-prefix"],
+    "no-angle-bracket-type-assertion": false
   }
 }
