@@ -49,7 +49,7 @@
     "sinon": "^2.1.0",
     "start-simple-cli": "^4.1.1",
     "tkstr-devtools": "^1.2.2",
-    "semantic-release": "^6.3.2"
+    "semantic-release": "6.3.5"
   },
   "dependencies": {
     "@types/mocha": "^2.2.40"
