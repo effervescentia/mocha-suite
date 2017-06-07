@@ -21,4 +21,4 @@ jobs:
           command: yarn start ci
       - run:
           name: Release
-          command: yarn start release
+          command: yarn start release || true
