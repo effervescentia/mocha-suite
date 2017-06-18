@@ -1,5 +1,6 @@
 // tslint:disable max-line-length
 import * as mocha from 'mocha';
+import * as assign from 'object.assign';
 
 declare const describe: mocha.IContextDefinition;
 
@@ -30,7 +31,7 @@ namespace Suite {
   }
 
   export const build: BuildDescription = (builder) =>
-    Object.assign(builder(), { only: builder(Modifier.ONLY), skip: builder(Modifier.SKIP) });
+    assign(builder(), { only: builder(Modifier.ONLY), skip: builder(Modifier.SKIP) });
 
   // tslint:disable-next-line variable-name
   export const run = (modifier: Suite.Modifier, _describe: mocha.IContextDefinition, description: string, suite: () => void) =>
