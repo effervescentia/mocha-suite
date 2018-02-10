@@ -47,7 +47,7 @@
     "@types/sinon": "^2.1.2",
     "chai": "^3.5.0",
     "semantic-release": "^6.3.2",
-    "sinon": "^2.1.0",
+    "sinon": "^4.3.0",
     "start-simple-cli": "^4.1.1",
     "tkstr-devtools": "^1.2.2"
   },
