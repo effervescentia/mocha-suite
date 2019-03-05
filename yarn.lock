@@ -43,9 +43,10 @@
   version "2.2.40"
   resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-2.2.40.tgz#9811dd800ece544cd84b5b859917bf584a150c4c"
 
-"@types/sinon@^2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@types/sinon/-/sinon-2.1.2.tgz#88dbbd29910c4fd1b5fbd3c733a723f277eab583"
+"@types/sinon@^7.0.9":
+  version "7.0.9"
+  resolved "https://registry.yarnpkg.com/@types/sinon/-/sinon-7.0.9.tgz#981593ea396a4fb1b69e3d8ba04de0a420fd4b16"
+  integrity sha512-PS102Fj4BAa9B8C0qLp677UiW9sdI+9ZhsD6GdPbcNKNdymyKKRJ1Bsc5Uk5pQV7jTtLozTQdxzgnQx+aH8Pvg==
 
 abbrev@1:
   version "1.1.0"
