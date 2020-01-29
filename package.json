@@ -52,7 +52,7 @@
     "tkstr-devtools": "^1.2.2"
   },
   "dependencies": {
-    "@types/mocha": "^2.2.40",
+    "@types/mocha": "^7.0.0",
     "object.assign": "^4.0.4"
   }
 }
